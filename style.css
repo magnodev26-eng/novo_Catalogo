@@ -1,0 +1,15 @@
+.cabecalho_principal {
+    width: 100%;
+    background-color: blue;
+    display: flex;
+
+}
+
+nav ul {
+    display: flex;
+
+}
+
+.grade_catalogo {
+    display: flex;
+}
