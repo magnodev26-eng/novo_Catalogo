@@ -24,12 +24,12 @@
 
     <main>
         <section id="Inicio">
-            <div class="banner-destaque">
+            <div class="banner_destaque">
                 <p>Explore as imagens e indique suas preferencias</p>
             </div>
         </section>
         <section id="catalogo">
-            <div class="titulo-com-linha">
+            <div class="titulo_com_linha">
                 <h2>Catálogo - 20 imagens</h2>
                 <hr>
             </div>
@@ -171,8 +171,79 @@
             </div>
 
         </section>
+        <section id="sobre">
+            <div class="caixa_sobre">
+                <h2>Sobre</h2>
+                <div class="linha_vertical"></div>
+                <p>Catalogo com imagens com tema livre, mostrando diferentes paisagens. </p>
+            </div>
+        </section>
+        <section id="minhhas_escolhas">
+            <div class="titulo_com_linha">
+                <h2>Minhas Escolhas</h2>
+                <hr>
+            </div>
 
+
+            <form class="formulario_escolhas" action="#">
+                <div class="coluna_form">
+                    <div class="coluna_input">
+                        <label for="nome">Nome da selecao</label>
+                        <input type="text" id="nome" name="nome">
+
+                        <label for="item_interesse">Item de item_interesse</label>
+                        <select id="item_interesse">
+                            <item_interesse>
+                                <option>Selecione um item</option>
+                        </select>
+                    </div>
+                    <!--Coluna da direita-->
+                    <div class="coluna_input_opcoes">
+                        <fieldset>
+                            <legend>Motivo da escolhha</legend>
+                            <div class="linha_opcoes">
+                                <div class="item_opcao">
+                                    <input type="radio" id="estudo" name="motivo" value="estudo">
+                                    <label for="estudo">Estudo</label>
+                                </div>
+                                <div class="item_opcao">
+                                    <input type="radio" id="trabalho" name="motivo" value="trabalho">
+                                    <label for="radio">Trabalho</label>
+                                </div>
+                                <div class="item_opcao">
+                                    <input type="radio" id="lazer" name="motivo" value="lazer">
+                                    <label for="radio">Lazer</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend> O que chamou sua atencao</legend>
+                            <div class="linha_opcoes">
+                                <div class="item_opcao">
+                                    <input type="checkbox" id="aparencia" name="atencao" value="aparencia">
+                                    <label for="aparencia">Aparencia</label>
+                                </div>
+                                <div class="item_opcao">
+                                    <input type="radio" id="caracteristicas" name="motivo" value="caracteristicas">
+                                    <label for="caracteristicas">caracteristicas</label>
+                                </div>
+                                <div class="item_opcao">
+                                    <input type="checkbox" id="utilidades" name="motivo" value="utilidades">
+                                    <label for="utilidades">Utilidades</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <!--Linha inferior-->
+                <div class="linha_total">
+                    <label for="opiniao">Conte o que achou do item</label>
+                    <input type="text" id="opiniao" name="opiniao">
+                </div>
+            </form>
+        </section>
     </main>
+    <footer> Dev Senai - @Magno</footer>
 
 </body>
 
