@@ -254,8 +254,8 @@ footer {
     font-weight: bold;
 }
 
-/*--10. RESPONSIVIDADE (TELEMÓVEIS)-- */
-@media (max-width: 768px) {
+/*--10. RESPONSIVIDADE -- */
+@media (max-width: 769px) {
     .cabecalho_principal {
         flex-direction: column;
         /* Coloca o título em cima e os links em baixo */
@@ -269,10 +269,10 @@ footer {
 
     .colunas_form {
         flex-direction: column;
-        /* Coloca o formulário numa única coluna */
+        /* --Coloca o formulário numa única coluna --*/
     }
 
-    /* Remove a linha vertical divisória do formulário no telemóvel */
+    /*-- Remove a linha vertical divisória do formulário no celular-- */
     .coluna_input:first-child {
         border-right: none;
         padding-right: 0;
@@ -280,7 +280,7 @@ footer {
         padding-bottom: 15px;
     }
 
-    /* Ajusta a barra "Sobre" */
+    /* --Ajusta a barra "Sobre"-- */
     .caixa-sobre {
         flex-direction: column;
         text-align: center;
@@ -289,6 +289,6 @@ footer {
     .linha-vertical {
         width: 40px;
         height: 2px;
-        /* Muda a linha vertical para horizontal */
+        /*-- Muda a linha vertical para horizontal --*/
     }
 }
