@@ -1,6 +1,4 @@
-/* =========================================
-   1. VARIÁVEIS E RESET BÁSICO
-========================================= */
+/* 1. VARIÁVEIS E RESET BÁSICO*/
 :root {
     --azul-escuro: #0B2046;
     /* Cor do cabeçalho, rodapé e textos principais */
@@ -24,13 +22,11 @@
 body {
     background-color: var(--fundo-pagina);
     padding: 20px;
-    /* Cria um espaço em volta de todo o ecrã */
+    /* Cria um espaço em volta de todo da tela */
 }
 
-/* =========================================
-   2. ESTRUTURA PRINCIPAL (Caixa central)
-========================================= */
-/* Limitamos a largura máxima para não esticar demasiado em ecrãs grandes */
+/* 2. ESTRUTURA PRINCIPAL (Caixa central)-- */
+/* Limita a largura máxima para não esticar de mais em telas grandes */
 .cabecalho_principal,
 main,
 footer {
@@ -45,9 +41,8 @@ main {
     border-right: 1px solid var(--borda);
 }
 
-/* =========================================
-   3. CABEÇALHO E NAVEGAÇÃO
-========================================= */
+/*--3. CABEÇALHO E NAVEGAÇÃO--*/
+
 .cabecalho_principal {
     background-color: var(--azul-escuro);
     color: #ffffff;
@@ -78,12 +73,10 @@ main {
 
 /* Sublinha apenas o primeiro link ("Início") para simular o estado ativo */
 .cabecalho_principal nav ul li:first-child a {
-    border-bottom: 2px solid var(--verde-escuro);
+    border-bottom: 3px solid var(--verde-escuro);
 }
 
-/* =========================================
-   4. BANNER DE DESTAQUE
-========================================= */
+/* 4. BANNER DE DESTAQUE */
 .banner_destaque {
     background-color: var(--verde-agua);
     color: var(--azul-escuro);
@@ -94,9 +87,7 @@ main {
     margin-bottom: 20px;
 }
 
-/* =========================================
-   5. TÍTULOS COM LINHA LATERAL
-========================================= */
+/* 5. TÍTULOS COM LINHA LATERAL*/
 .titulo_com_linha {
     display: flex;
     align-items: center;
@@ -118,9 +109,7 @@ main {
     background-color: var(--verde-escuro);
 }
 
-/* =========================================
-   6. CATÁLOGO (GRELHA DE 5 COLUNAS)
-========================================= */
+/* --6. CATÁLOGO (GRELHA DE 5 COLUNAS)--*/
 .grade_catalogo {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -159,9 +148,7 @@ main {
     border-bottom: 2px solid #d3d3d3;
 }
 
-/* =========================================
-   7. SECÇÃO "SOBRE"
-========================================= */
+/* --7. SECÇÃO "SOBRE"-- */
 .caixa_sobre {
     background-color: var(--verde-agua);
     padding: 12px 20px;
@@ -189,9 +176,7 @@ main {
     font-size: 0.9rem;
 }
 
-/* =========================================
-   8. FORMULÁRIO (MINHAS ESCOLHAS)
-========================================= */
+/*--8. FORMULÁRIO (MINHAS ESCOLHAS)-- */
 .coluna_form {
     display: flex;
     gap: 20px;
@@ -235,7 +220,7 @@ fieldset {
     margin-bottom: 10px;
 }
 
-/* Coloca os botões de opção (radio/checkbox) lado a lado */
+/* --Coloca os botões de opção (radio/checkbox) lado a lado--*/
 .linha_opcoes {
     display: flex;
     gap: 15px;
@@ -258,9 +243,7 @@ fieldset {
     margin-top: 10px;
 }
 
-/* =========================================
-   9. RODAPÉ
-========================================= */
+/*--9. RODAPÉ--*/
 footer {
     background-color: var(--azul-escuro);
     color: #ffffff;
@@ -271,9 +254,7 @@ footer {
     font-weight: bold;
 }
 
-/* =========================================
-   10. RESPONSIVIDADE (TELEMÓVEIS)
-========================================= */
+/*--10. RESPONSIVIDADE (TELEMÓVEIS)-- */
 @media (max-width: 768px) {
     .cabecalho_principal {
         flex-direction: column;
